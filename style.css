@@ -3,3 +3,81 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #494655f5;
+    color: #656569;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+    background: #fff;
+    padding: 16px;
+    border: 2px solid #999;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+}
+
+h2, h3, h4 {
+    font-size: 14px;
+}
+
+button {
+    background-color: #e4ebec;
+    border: 2px solid #f1f5f7;
+    padding: 10px 20px;
+    font-weight: bold;
+    }
+
+p {
+    background-color: #e3e3e3;
+    border: 1px solid #bbb;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+a {
+    
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+    background: #71a7c7;
+    border: 2px solod #999;
+}
+
+.logo {
+    background: #e4f2f8;
+    border:2px solid #d9dce0;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f7eeee;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ;
+}
+
+.hero {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border: 2px solid #999;
+}
