@@ -61,19 +61,34 @@ a {
     font-weight: bold;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    padding: 14px 16px;
+    background: #eeeeee;
+    border: 2px solid #999;
+}
+
 .menu {
     display: flex;
     gap: 8px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .menu a {
     text-decoration: none;
-    color: #f7eeee;
+    background: #dddddd;
+    border: 1px solid #aaa;
+    color: #333;
     padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ;
 }
-
 .hero {
     display: flex;
     gap: 12px;
@@ -176,8 +191,8 @@ a {
 }
 
 .card h4 {
-    background : #e4f2f8;
-    border: 1px solid #333;
+    background : #fdfdfd;
+    border: 1px solid #9b1c1c;
     padding: 6px 8px;
 }
 
@@ -193,13 +208,13 @@ a {
     flex: 1;
     gap: 12px;
     padding: 12px;
-    border: 1px solid #bbb;
-    background:#ffff
+    border: 1px solid #0e0c0c;
+    background:#a3b9be
  }
 
  .widget {
-    background: #e5e5e5;
-    border: 1px solid #aaa;
+    background: #71a7c7;
+    border: 1px solid #eeeeee;
     padding: 12px;
     font-size: 14px;
  }
@@ -212,21 +227,82 @@ a {
  .Destaques {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
-    gap: 8px;
+    align-items: center;
+
+    text-align: center;
+
     min-height: 185px;
     padding: 20px;
-    background: #e4f2f8;
-    border: 2px solid #d9dce0;
- }
+    background: #71a7c7;
+    border: 2px solid #000000;
+    gap: 8px;
+}
 
- .Destaque h2 {
-    background: #e4f2f8;
-    border: 1px solid #d9dce0;
+ .Destaques h2 {
+    width: fit-content;
+    background: #f8f5f5;
     padding: 10px 24px;
+}
+
+.Destaques p {
+    width: fit-content;
+    background: #f3f0f0;
+    padding: 8px 18px;
+}
+
+ .Destaque-button {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
  }
 
- .Destaques p {
-    background: #e4f2f8;
-    padding: 6px 10px;
+ .footer {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border: 2px solid #0c0d0e;
  }
+
+ .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid #8819f0;
+ }
+
+ .footer-about {
+    flex: 2;
+ }
+
+ .footer-links {
+    flex: 1;
+ }
+
+ .footer-social {
+    flex: 1;
+ }
+
+ .footer-column p {
+    background: #e4f2f8;
+    border: 1px solid #176cdb;
+    padding: 6px;
+    font-size: 12px;
+ }
+
+ .social-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 8px;
+ }
+
+ 
+ .social-buttons button {
+    padding: 8px 12px;
+}
+
+
